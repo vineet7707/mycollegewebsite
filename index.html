@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            /* flex-direction: column; */
+            /* border: 2px solid red; */
+            height: 100vh;
+            width: 100wh;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+
+        }
+        .navbar{
+            display: flex;
+            flex-wrap: wrap;
+            
+            list-style:none;
+            background-color: blueviolet;
+            justify-content: center;
+            justify-items: center;
+            
+        }
+       
+        
+        .navbar li a{
+            cursor: pointer;
+            padding: 20px 20px;
+            font-size: 2rem;
+
+        }
+
+        @media only screen and (max-width: 650px) {
+            .container{
+                flex-direction: column;
+
+            }
+            .navbar ul{
+                width: 200px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+        }
+
+        .container2 {
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid red; */
+            height: 359px;
+            width: 100wh;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+
+
+        }
+
+        .box {
+            height: 389px;
+            width: 425px;
+        }
+
+        #box1 {
+            background-color: rgb(204, 185, 185);
+        }
+
+        #box2 {
+            background-color: rgb(119, 0, 255);
+        }
+
+        select {
+            padding: 8px 20px;
+        }
+
+        .btn {
+            margin-top: 18px;
+
+        }
+
+        img {
+            margin-bottom: 20px;
+        }
+        .dd{
+            display: flex;
+            flex-direction: row;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="dd">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="admission.html">Admission form</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div id="box1" class="box">
+
+            <div class="container2">
+                <img src="logo.png" alt="">
+
+                <select name="colleges" id="colleges">
+                    <option value="" selected disabled>---- Select Learning Center/College----</option>
+                    <option value="Ranchi college Ranchi" placeholder="your name please">Ranchi college RaDoranda
+                        college Ranchi</option>
+                    <option value="Doranda college Ranchi">Doranda college Ranchi</option>
+                    <option value="Gossner college Ranchi">Gossner college Ranchi</option>
+                    <option value="Marwari college Ranchi">Marwari college Ranchi</option>
+                </select>
+
+                <select name="colleges" id="colleges2">
+                    <option value="Ranchi college Ranchi">Ranchi college RaDoranda college Ranchi</option>
+                    <option value="Doranda college Ranchi">Doranda college Ranchi</option>
+                    <option value="Gossner college Ranchi">Gossner college Ranchi</option>
+                    <option value="Marwari college Ranchi">Marwari college Ranchi</option>
+                </select>
+                <button class="btn">Submit Now</button>
+            </div>
+
+        </div>
+        <div id="box2" class="box">
+            <h2>Ranchi University, Ranchi</h2>
+            <h4>Online Fee Payment Facility</h4>
+            <p>Students are requested to enter correct details and confirm the same before proceeding to payment gateway
+                page. If your roll number is appearing as Incorrect Roll No., please contact your learning center,
+                college or department.
+
+                Kindly do not attempt to make duplicate payment of exaination fee. In case of failed transaction,
+                contact your college/department for verification and update.
+
+                For any query or complaint regarding fee payment, please submit a Support Ticket</p>
+
+        </div>
+    </div>
+</body>
+
+</html>
